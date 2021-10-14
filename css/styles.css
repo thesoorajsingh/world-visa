@@ -1060,12 +1060,13 @@ hr {
   border: 1px solid black;
   background-color: transparent;
   color: white;
+  transition: 0.4s;
 }
 .button-about:hover {
   background-color: white;
   border: 1px solid white;
   color: black;
-  transition: 0.3s;
+  transition: 0.4s;
 }
 /* about Us - Main Content */
 .about-main-content {
