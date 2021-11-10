@@ -1,6 +1,6 @@
 window.onscroll = function(){scrollFunction()};
 function scrollFunction(){
-    if (document.body.scrollTop > 40 || document.documentElement.scrollTop > 80) {
+    if (document.body.scrollTop < 40 || document.documentElement.scrollTop < 80) {
         //Changing:
         //->nav bar background colour to white on scroll
         document.getElementById("nav").style.background="#FFF";
@@ -16,7 +16,7 @@ function scrollFunction(){
         //Adding animations
         animationAdder();
     } else if(document.body.scrollTop < 40 || document.documentElement.scrollTop < 80 || document.getElementById("nav")){
-        document.getElementById("nav").style.background="transparent";
+        document.getElementById("nav").style.background="white";
         document.getElementById("nav").style.boxShadow="0 0 0 0 white";
         colorWhite(document.querySelectorAll("nav ul li a"));
         document.getElementById('j-point').style.color="#f5f5f5";
@@ -43,3 +43,5 @@ function animationAdder(){
     elementThree.classList.add('animate__animated','animate__pulse','animate__repeat-3','animate__slower')
     }
 }
+
+// 
