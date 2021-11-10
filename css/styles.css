@@ -1016,7 +1016,9 @@ hr {
 .about-hero {
   height: 100vh;
   /* image url to be changed here */
-  background: url("../images/about_img.png") no-repeat bottom;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2)),
+    url("../images/about_img.png") no-repeat bottom;
+
   background-size: cover;
   width: 100%;
 }
@@ -1025,7 +1027,7 @@ hr {
   background: linear-gradient(
     180deg,
     rgba(199, 0, 13, 0.4) 0%,
-    rgba(199, 0, 13, 0.15) 100%
+    rgba(199, 0, 13, 0.1) 100%
   );
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
@@ -1053,7 +1055,7 @@ hr {
   border-radius: 25px;
   width: 240px;
   font-size: 18px;
-  border: 1px solid black;
+  border: 1px solid white;
   background-color: transparent;
   color: white;
   transition: 0.4s;
@@ -1061,7 +1063,7 @@ hr {
 }
 .button-about:hover {
   background-color: white;
-  border: 1px solid white;
+  border: 1px solid red;
   color: black;
   transition: 0.4s;
 }
